@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class PrimeTimeTest {
-    final int[] ns = new int[100_000_000];
+    final int[] ns = new int[1_500_000];
 
     @Before
     public void setUp() throws Exception {
@@ -18,7 +18,7 @@ public class PrimeTimeTest {
 
     @Test
     public void imperative() {
-        for(int i = 0; i < ns.length; i++) PrimeTime.prime(i);
+        for(int i = 0; i < ns.length; i++) PrimeTime.prime(ns[i]);
     }
 
     @Test
