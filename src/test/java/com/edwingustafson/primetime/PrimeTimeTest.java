@@ -12,7 +12,7 @@ public class PrimeTimeTest {
 
     @Before
     public void setUp() throws Exception {
-        Arrays.setAll(ns, (i) -> random.nextInt());
+        Arrays.setAll(ns, (i) -> 2 + random.nextInt(9998));
     }
 
     @Test
