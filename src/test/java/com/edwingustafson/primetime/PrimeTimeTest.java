@@ -7,13 +7,12 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class PrimeTimeTest {
-    final int[] ns = new int[1_500_000];
+    final int[] ns = new int[2_000_000];
+    final Random random = new Random();
 
     @Before
     public void setUp() throws Exception {
-        final Random random = new Random();
-
-        for(int i = 0; i < ns.length; i++) ns[i] = random.nextInt();
+        Arrays.setAll(ns, (i) -> random.nextInt());
     }
 
     @Test
