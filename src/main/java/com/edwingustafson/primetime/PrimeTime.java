@@ -1,11 +1,9 @@
 package com.edwingustafson.primetime;
 
+import java.util.stream.IntStream;
+
 public class PrimeTime {
     public static boolean prime(final int n) {
-        for( int m = 2; m * m <= n; m++ ) {
-            if( n % m == 0 ) return false;
-        }
-
-        return true;
+        return IntStream.range(2, n).filter(m -> m * m < n).noneMatch(m -> n % m == 0);
     }
 }
