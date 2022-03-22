@@ -1,16 +1,16 @@
 package com.edwingustafson.primetime;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Random;
 
 public class PrimeTimeTest {
-    final int[] ns = new int[2_000_000];
+    final int[] ns = new int[2_097_152];
     final Random random = new Random();
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         Arrays.setAll(ns, (i) -> 2 + random.nextInt(9998));
     }
