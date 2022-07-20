@@ -1,5 +1,10 @@
+.bloop
+.classpath
 .gradle
 .idea
+.metals
+.project
+.settings
 .vscode
 bin
 build
