@@ -9,7 +9,7 @@ import java.util.Random;
 
 @DisplayName("PrimeTime")
 public class PrimeTimeTest {
-	final int[] ns = new int[500_000];
+	final int[] ns = new int[1_000_000];
 	final Random random = new Random();
 
 	@BeforeEach
